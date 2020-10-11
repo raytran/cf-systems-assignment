@@ -2,6 +2,8 @@
 This is my submission for the 2020 Cloudflare Systems Assignment.
 
 Built by Raymond Tran.
+![First example](example.png?raw=true "Example Use")
+![Second Example](example2.png?raw=true "Example Use")
 
 ## Building and running
 ```
