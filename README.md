@@ -7,7 +7,28 @@ Built by Raymond Tran.
 ```
 cargo build --release
 cd target/release
-./cf-systems-assignment
+./cf-systems-assignment <url> --profile <times to profile>
+```
+If --profile is omitted, the response is printed to console.
+
+### Example output
+The following profiles [https://cf-general-assignment.raytran.workers.dev/links](https://cf-general-assignment.raytran.workers.dev/links) after 20 GET requests
+```
+[raytran@arch-g14 release]$ ./cf-systems-assignment https://cf-general-assignment.raytran.workers.dev/links -p 20
+http://cf-general-assignment.raytran.workers.dev/links
+------------------------------------------------------
+http://cf-general-assignment.raytran.workers.dev/links
+------------------------------------------------------
+Number of Requests.........20
+Fastest Time (ms)..........67
+Slowest Time (ms)..........115
+Mean Time (ms).............84
+Median Time (ms)...........84
+Success Percentage.........1
+Smallest Response (bytes)..981
+Largest Response (bytes)...981
+Error Codes:
+    
 ```
 
 ## Running Tests
